@@ -1,0 +1,6 @@
+<form action="{% url 'buscar_alumno' %}" method="GET">
+    {% csrf_token %}
+    <p>Nombre</p>
+    <input type="text" name="nombre" id="nombre">
+    <button type="submit">Buscar</button>
+</form>
